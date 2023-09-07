@@ -10,8 +10,8 @@ public class Configuration
         {
             ConfigurationManager configurationManager = new();
             configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(),
-                //API projesinin tam yolunu yaz
-                "/../../../Prestation/WebAPI.API"));
+                // /../../../Presentation/WebAPI/WebAPI.csproj sondaki WebAPI.csproj'u alma
+                "/../../../Prestation/WebAPI"));
             configurationManager.AddJsonFile("appsettings.json");
 
             return configurationManager.GetConnectionString("SqlConnectonName");
